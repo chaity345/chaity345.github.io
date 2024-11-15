@@ -1,0 +1,574 @@
+body{
+    background-color: lightyellow;
+    margin: 20px;
+}
+/* css font styles */
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .roboto-bold-italic {
+    font-family: "Roboto", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+   .imageStyle{
+    width: 100px;
+    height:100px;
+    
+    
+  } 
+  /* border for image */
+  
+    
+  
+  /* make nav elements inline */
+  nav{
+    display: flex;
+   gap: 50px;
+  }
+
+  /* make nav animation */
+  /* nav{
+     position:relative; 
+  } */
+
+  nav>.imageContainer{
+    animation: moveBox1 2s infinite;
+    /* position: absolute; */
+     /* top:20px; */
+     margin: auto;
+    border: 2px solid lightgreen;
+
+    border-radius: 30px;
+    
+  }
+  @keyframes moveBox1 {
+    0% {
+          /* bottom: 12px; */
+        /* right: 12px; */  
+        /* width: 20%; */
+        
+    
+    }
+
+    50% {
+         /* bottom: 20px; */
+        /* left: 0px; */ 
+        /* background-color: rgba(42, 199, 25, 0.5); */
+
+       
+    }
+
+    100% {
+        /* bottom: 30px; */
+       /*  left: 0px; */
+       /*  width: 50%; */
+        /* background-color: rgba(14, 37, 137, 0.5); */
+        /* position related property */
+        /* transform: rotate(-90deg); */
+        /* scale reduced hight and weight along */
+           transform: scale(0.5); 
+         /*  transform: skew(25deg); */
+          
+    }     
+        
+    
+  }
+
+  /* style for another block of nav for animation */
+
+  nav>.flexContainer{
+    animation: moveBox2 2s infinite;
+    /* position: absolute; */
+    /* top:12px;
+    left:50px;
+     */
+  }
+
+  @keyframes moveBox2 {
+    0% {
+          bottom: 0px;
+        /* right: 12px; */  
+        /* width: 20%; */
+        
+    
+    }
+
+    50% {
+         bottom: 0px;
+        /* left: 0px; */ 
+        background-color: rgba(42, 199, 25, 0.5);
+
+       
+    }
+
+    100% {
+        bottom: 0px;
+       /*  left: 0px; */
+       /*  width: 50%; */
+        /* background-color: rgba(14, 37, 137, 0.5); */
+        /* position related property */
+        /* transform: rotate(-90deg); */
+        /* scale reduced hight and weight along */
+          /* transform: scale(0.5); */ 
+
+          transform: skew(40deg);
+          
+    }     
+        
+    
+  }
+
+  /* background image styles */
+  /* size for background image */
+  .hero {
+    /* get image by css */
+    background-image: url("images/intro_img2.jpg");
+
+    /* size for background image */
+    background-size: 100% 100%;
+
+     position: relative; 
+    
+/* need height for give apropiate height of background image  */
+    height: 500px;
+}
+.box1{
+    background-color: rgba(241, 253, 253,0.5);
+    position: absolute;
+    /* make the block down and from move to left side */
+    top:30%;
+    left:5%;
+
+    border:3px solid white;
+    padding: 5px;
+    margin: 2px;
+
+}
+
+/* style for image with text */
+.intro2{
+    
+        position: relative;
+        display: inline-block;
+      
+}
+.intro2 img{
+    display: block;
+  width: 100%;
+  height: 520px;
+  filter: blur(2px); 
+  filter: opacity(80%);
+}
+.des{
+    position: absolute;
+    top: 20%; 
+    left: 10%; 
+     /* transform: translate(-50%, -50%); */ 
+    /* background-color:rgba(241, 253, 253,0.5);   */
+    
+    padding: 50px; 
+    font-size: 30px; 
+    /* text-align: center; */
+    /* background-color: rgba(0,0,0,0.2); */
+    color: azure;
+    margin: auto;
+    border: 2px solid lightgreen
+
+
+}
+
+.intro3{
+    background-image: linear-gradient(rgba(181, 239, 200, 0.5), rgba(246, 204, 244, 0.5));
+    width: 80%;
+    height: 500px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    
+    padding:20px 20px 0px;
+    
+    
+}
+.intro3 >p ,h1{
+    font-size: medium;
+    color: rgba(54, 178, 54, 0.5);
+}
+.introContainer{
+    display:flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.f2{
+    color: black;
+    font-size: medium;
+    
+}
+.btn{
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+    color: azure;
+}
+
+.btn:hover{
+    background-color: grey;
+
+
+}
+.f2{
+    color: black;
+}
+.modalFlex{
+    display: flex;
+}
+.button{
+    padding: 10px;
+    background-color: azure;
+    color: black;
+     border:none;
+     text-decoration: none; 
+}
+.modalPart2{
+    background-color: rgba(174, 171, 171,0.5);
+    padding: 20px;
+}
+/* background for modalwindow */
+
+.modalWindowElement{
+    background-color: azure;
+    padding: 10px;
+    width: 60%;
+    height:60%;
+    /* text-align: center; */
+    margin-top: 10%;
+    margin-left: 20%;
+}
+/* style for modal window exit button on the top corner */
+.modalWindowElement{
+    position: relative;
+}
+
+.exitButton{
+    position:absolute;
+    bottom:97%;
+    left:97%;
+    text-decoration: none;
+}
+
+/* style for modal window1 to link with main window */
+.modalWindow1{
+    background-color: rgba(255, 255, 255,0.5);
+    
+    opacity:0;
+    
+     pointer-events: none;
+     /* never moved so we use fixed */
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+
+    
+}
+.modalWindow1:target{
+    opacity:1;
+    pointer-events: all;
+}
+
+/* style for modalWindow2 */
+.modalWindow2{
+    background-color: rgba(255, 255, 255,0.5);
+    
+    opacity:0;
+    
+     pointer-events: none;
+     /* never moved so we use fixed */
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+
+    
+}
+.modalWindow2:target{
+    opacity:1;
+    pointer-events: all;
+}
+
+/* style for modalWindow3 for part mainwindow part1 */
+
+.modalWindow3{
+    background-color: rgba(255, 255, 255,0.5);
+    
+    opacity:0;
+    
+     pointer-events: none;
+     /* never moved so we use fixed */
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+
+    
+}
+.modalWindow3:target{
+    opacity:1;
+    pointer-events: all;
+}
+/* style for modalWindowG1 for main window part2 */
+
+.modalWindowG1{
+    background-color: rgba(255, 255, 255,0.5);
+    
+    opacity:0;
+    
+     pointer-events: none;
+     /* never moved so we use fixed */
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+
+    
+}
+.modalWindowG1:target{
+    opacity:1;
+    pointer-events: all;
+}
+
+/* style for modalWindowG2 for main window part2 */
+.modalWindowG2{
+    background-color: rgba(255, 255, 255,0.5);
+    
+    opacity:0;
+    
+     pointer-events: none;
+     /* never moved so we use fixed */
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+
+    
+}
+.modalWindowG2:target{
+    opacity:1;
+    pointer-events: all;
+}
+
+/* style for modalWindowG2 for main window part2 */
+.modalWindowG3{
+    background-color: rgba(255, 255, 255,0.5);
+    
+    opacity:0;
+    
+     pointer-events: none;
+     /* never moved so we use fixed */
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+
+    
+}
+.modalWindowG3:target{
+    opacity:1;
+    pointer-events: all;
+}
+
+
+
+
+
+
+/* dispaly flex for item part */
+.mainContainer1{
+    display: flex;
+}
+/* dispaly flex for gift  part */
+.mainContainer2{
+    display: flex;
+}
+
+/* display flex for footer first part */
+.container{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+}
+footer{
+    background-color: black;
+}
+.hr{
+      
+        height: 4px;  
+        background-color: aliceblue; 
+        border: none;  
+     
+}
+/* style for logo img size */
+.foterImg>img{
+    width: 5%;
+    height: 10%;
+    gap: 2px;
+}
+.h2{
+    color: aliceblue;
+
+}
+
+.f{
+    font-size: 15px;
+}
+.footerLast{
+    color: aliceblue;
+    text-align: center;
+    
+}
+.footerSecond{
+    text-align: right;
+
+}
+.mainContainer2>img{
+    width: 20%;
+    height: 30%;
+}
+
+
+.my_slide1{
+    background-color: darkgoldenrod;
+    width: 100%;
+    height:50px;
+    text-align: center;
+}
+
+.my_slide2{
+    background-color: yellowgreen;
+    width: 100%;
+    height:50px;
+    text-align: center;
+}
+.img_slider{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    
+}
+figure{
+    position: relative;
+    left:0;
+}
+/* .my_slide1,.my_slide2{
+    position: relative;
+    float:left;
+}
+ */
+
+ .img_slider{
+     position:relative; 
+    width: 100%;
+    animation: 2s my_slider infinite;
+
+    
+    
+ }
+ @keyframes my_slider {
+    0%{
+        left: 0%;
+    }
+    9%{
+        left: 0%;
+    }
+    18%{
+        left: -50%;
+    }
+    27%{
+        left: -50%;
+    }
+    36%{
+        left: -100%;
+    }
+    
+    54%{
+        left: -100%;
+    }
+    63%{
+        left: -200%;
+    }
+    72%{
+        left: -200%;
+    }
+    81%{
+        left: -100%;
+    }
+    90%{
+        left: -100%;
+    }
+    99%{
+        left: -50%;
+    }
+    100%{
+        left: 0%;
+    }
+
+
+    
+    
+ }
+ /*  .my_slide1{
+    position: relative;
+    
+ }  */
+ /* my_slide2{
+    position: relative;
+    float: left;
+ } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+
+  
+  
+  
+
+  

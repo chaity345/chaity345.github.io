@@ -1,0 +1,99 @@
+/* .imgContainer{
+    background-image: url('/images/nyc.jpg');
+    background-size: 100% 100%;
+}
+
+ */
+ .Container{
+   position: relative;
+    
+ }
+ .Container>img{
+    width: 100%;
+    height: 100%;
+ }
+ .heroBox{
+    position: absolute;
+    top: 0;
+    left: 10px;
+ }
+
+.hero{
+    background-image: url("images/clockimage.png");
+    background-size: 100% 100%;
+    /* here 25% Left for background image set in the middle */
+     margin:20px 20px 20px 25%; 
+     background-color: rgba(192, 101, 162, 0.5); 
+    /* set fixed height and width for get small image */
+     width:300px;
+     height:400px; 
+
+    position:relative;
+    
+}
+.I{
+    width: 50%;
+    height:25%;
+}
+.hero>.hand1{
+    position: absolute;
+      left:50%; 
+      top:54%; 
+      
+      animation: moveBox1 2s infinite; 
+     
+    
+
+}
+@keyframes moveBox1 {
+    0%{transform: rotate(0deg);
+        transform-origin: bottom center;
+        
+
+        
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: bottom center;
+        
+
+        
+       
+        
+    }
+    
+}
+
+.hero>.hand2{
+     position:absolute; 
+     /* left:50%;
+     top:46%; */
+     /* use transform property to straight up the angle
+     -90deg to up the angle */
+     transform: rotate(-90deg);
+     /* top for set the position properly */
+     top:12%;
+      /* animation: moveBox2 2s infinite;  */
+     
+
+    
+
+    
+    
+}
+@keyframes moveBox2 {
+    0%{transform: rotate(0deg);
+        transform-origin: bottom center;
+        
+
+        
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: bottom center;
+
+    
+}
+}
